@@ -1,1 +1,27 @@
 public
+node_modules
+
+# macOS
+.DS_Store
+
+# Editor directories
+.vscode/
+.idea/
+
+# Environment files
+.env
+.env.*.local
+
+# Logs
+*.log
+
+# Hugo cache / build
+.resources/
+
+# Temporary directories
+.cache/
+.sass-cache/
+
+# Misc
+dist/
+coverage/
