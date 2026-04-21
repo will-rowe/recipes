@@ -1,5 +1,6 @@
 # hugo
-baseURL: "https://willrowe.net/recipes"
+baseURL: "/"
+relativeURLs: true
 title: "Will Rowe"
 theme: paperModMod
 googleAnalytics: UA-90659329-1
@@ -12,7 +13,7 @@ minify:
   minifyOutput: true
 pagination:
   pagerSize: 11
-canonifyURLs: true
+canonifyURLs: false
 
 # paperMod
 outputs:

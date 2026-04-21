@@ -27,7 +27,10 @@
   <!---recipe card--->
   <div class="item-{{ add $index 1 }}">
     <a href="{{ .Permalink }}" class="card">
-      <div class="thumb" style="--recipeImage: url('{{ .Params.cover.image | absURL }}');">
+      <div class="thumb">
+        {{ with .Params.cover }}
+        <img class="thumb-img" src="{{ .image | absURL }}" alt="Cover image for {{ $.Title }}" loading="lazy" decoding="async">
+        {{ end }}
       </div>
       <article>
         <h1>{{ .Title }}</h1>

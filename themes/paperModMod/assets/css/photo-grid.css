@@ -61,9 +61,18 @@
 }
 
 .card .thumb {
-    padding-bottom: 80%;
-    background-size: cover;
-    background-position: center center;
+    /* use aspect-ratio when using an <img> instead of background-image */
+    padding-bottom: 0;
+    aspect-ratio: 5 / 4;
+    overflow: hidden;
+    background: none;
+}
+
+.card .thumb .thumb-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .thumb {

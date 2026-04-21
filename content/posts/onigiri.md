@@ -6,7 +6,7 @@ lastmod:
 author: "Will"
 title: "Onigiri"
 aliases: ["/onigiri"]
-tags: ["Japenese"]
+tags: ["japanese"]
 summary: "Seasoned rice snack with a savoury filling"
 cover:
     image: "img/posts/onigiri.jpg"
