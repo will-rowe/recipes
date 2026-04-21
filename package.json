@@ -1,0 +1,16 @@
+{
+  "name": "recipes",
+  "version": "1.0.0",
+  "description": "A collection of recipes",
+  "scripts": {
+    "build": "hugo --minify",
+    "clean": "rm -rf public",
+    "deploy": "wrangler pages deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.84.1"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
