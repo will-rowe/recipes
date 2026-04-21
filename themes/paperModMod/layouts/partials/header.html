@@ -9,6 +9,7 @@
 </script>
 
 <header class="header">
+    <a class="skip-to-content" href="#main-content">Skip to content</a>
     <nav class="nav">
         {{- $currentPage := . }}
 
@@ -20,7 +21,7 @@
         </div>
 
         <!--menu control-->
-        <div class="navGus">
+        <div class="navGus" role="button" tabindex="0" aria-expanded="false" aria-controls="navMenu">
             <img id="navGusR" src="{{- .Site.Params.label.iconR | absURL -}}" alt="logo" aria-label="logo">
             <img id="navGusL" style="display: none;" src="{{- .Site.Params.label.iconL | absURL -}}" alt="logo"
                 aria-label="logo">
@@ -34,7 +35,7 @@
         </div>
     </nav>
 
-    <div class="navMenu">
+    <div id="navMenu" class="navMenu" aria-hidden="true">
         <a href="javascript:void(0)" class="navCloser">&times;</a>
         <p>RECIPES</p>
         <ul>

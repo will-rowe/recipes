@@ -7,7 +7,7 @@ summary: "about"
 
 This site is to keep track of recipes that I cook regularly / have cooked more than once.
 
-The instructions are a rough guide and make a few assuptions:
+The instructions are a rough guide and make a few assumptions:
 
 * You are tasting whilst cooking; adjusting the seasoning, acidity etc.
 * Knife cut styles etc. are up to you. E.g. brunoise where it says dice if you have time and feel the recipe would be improved from it.

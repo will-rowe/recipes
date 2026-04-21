@@ -6,7 +6,7 @@ lastmod:
 author: "Will"
 title: "Okonomiyaki"
 aliases: ["/okonomiyaki"]
-tags: ["Japenese", "vegetarian"]
+tags: ["japanese", "vegetarian"]
 summary: "Savoury Japanese pancake"
 cover:
     image: "img/posts/okonomiyaki.jpg"

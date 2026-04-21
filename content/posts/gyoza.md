@@ -6,8 +6,8 @@ lastmod:
 author: "Will"
 title: "Gyoza"
 aliases: ["/gyoza"]
-tags: ["japenese"]
-summary: "Japenese dumplings"
+tags: ["japanese"]
+summary: "Japanese dumplings"
 cover:
     image: "img/posts/gyoza.jpeg"
     alt: "gyoza"

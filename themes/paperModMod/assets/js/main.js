@@ -99,13 +99,14 @@ document.getElementById('darkModeToggle').addEventListener('click', () => {
 })
 
 // scroller
-window.onload = function () {
+window.addEventListener('load', function () {
   if (localStorage.getItem('menu-scroll-position')) {
-    document.getElementById('menu').scrollLeft = localStorage.getItem(
-      'menu-scroll-position'
-    )
+    var menuEl = document.getElementById('menu')
+    if (menuEl) {
+      menuEl.scrollLeft = localStorage.getItem('menu-scroll-position')
+    }
   }
-}
+})
 var mybutton = document.getElementById('top-link')
 window.onscroll = function () {
   if (
@@ -136,48 +137,76 @@ function menu_on_scroll () {
 const metricUnits = ['g', 'kg', 'ml', 'l']
 var defaultServe
 var ingredients
-window.onload = function () {
+window.addEventListener('load', function () {
   defaultServe = document.getElementById('serve_size')
   ingredients = Array.from(document.querySelectorAll('.ingredient'))
-  if (defaultServe && ingredients.length !== 0) {
-    document
-      .querySelector('.spinner.increment')
-      .addEventListener('click', increment)
-    document
-      .querySelector('.spinner.decrement')
-      .addEventListener('click', decrement)
-  }
-}
+  var inc = document.querySelector('.spinner.increment')
+  var dec = document.querySelector('.spinner.decrement')
+  if (inc) inc.addEventListener('click', increment)
+  if (dec) dec.addEventListener('click', decrement)
+})
 
 function scaleIngredients (newServe, oldServe) {
   var ratio = newServe / oldServe
   ingredients.forEach(function (ingredient) {
-    var amount = ingredient.querySelector('.ingredient__amount')
-    var units = ingredient.querySelector('.ingredient__units')
-    var newAmount = parseFloat(amount.innerText) * ratio
-    if (metricUnits.includes(units.innerText)) {
-      newAmount = newAmount.toFixed(2)
-    } else {
-      newAmount = newAmount.toFixed(1)
+    var amountEl = ingredient.querySelector('.ingredient__amount')
+    var unitsEl = ingredient.querySelector('.ingredient__units')
+    if (!amountEl) return
+
+    var raw = (amountEl.innerText || '').trim()
+    // parse quantity, support simple fractions like "1 1/2" or "1/2"
+    function parseQty (s) {
+      if (!s) return NaN
+      var trimmed = s.replace(/,/g, '')
+      if (trimmed.indexOf('/') !== -1) {
+        // e.g. "1 1/2" or "3/4"
+        var parts = trimmed.split(' ')
+        if (parts.length === 2 && parts[1].indexOf('/') !== -1) {
+          var whole = parseFloat(parts[0]) || 0
+          var frac = parts[1].split('/')
+          return whole + (parseFloat(frac[0]) / parseFloat(frac[1]))
+        }
+        var frac = trimmed.split('/')
+        return parseFloat(frac[0]) / parseFloat(frac[1])
+      }
+      return parseFloat(trimmed)
     }
-    amount.innerText = Number(newAmount)
+
+    var qty = parseQty(raw)
+    if (isNaN(qty)) return
+    var newAmount = qty * ratio
+    var unitsText = unitsEl ? (unitsEl.innerText || '').trim() : ''
+    if (metricUnits.includes(unitsText)) {
+      // keep two decimals for metric, but trim trailing zeros
+      amountEl.innerText = (+newAmount.toFixed(2)).toString()
+    } else {
+      amountEl.innerText = (+newAmount.toFixed(1)).toString()
+    }
   })
 }
 
 const increment = () => {
   const serveInput = document.getElementById('serve_size')
-  scaleIngredients(Number(serveInput.value) + 1, Number(serveInput.value))
-  serveInput.value = Number(serveInput.value) + 1
-  document.getElementById('serve_size_stats').value = serveInput.innerText
+  if (!serveInput) return
+  var current = Number(serveInput.value || serveInput.innerText || serveInput.textContent || 1)
+  var next = current + 1
+  scaleIngredients(next, current)
+  if ('value' in serveInput) serveInput.value = next
+  else serveInput.textContent = next
+  var stats = document.getElementById('serve_size_stats')
+  if (stats) stats.textContent = String(next)
 }
 const decrement = () => {
   const serveInput = document.getElementById('serve_size')
-  if (serveInput.value === '1') {
-    return
-  }
-  scaleIngredients(Number(serveInput.value) - 1, Number(serveInput.value))
-  serveInput.value = Number(serveInput.value) - 1
-  document.getElementById('serve_size_stats').value = serveInput.innerText
+  if (!serveInput) return
+  var current = Number(serveInput.value || serveInput.innerText || serveInput.textContent || 1)
+  if (current <= 1) return
+  var next = current - 1
+  scaleIngredients(next, current)
+  if ('value' in serveInput) serveInput.value = next
+  else serveInput.textContent = next
+  var stats = document.getElementById('serve_size_stats')
+  if (stats) stats.textContent = String(next)
 }
 
 var modalTrigger = document.getElementById('modalImgTrigger')
@@ -189,19 +218,25 @@ if (modalTrigger) {
     modal.style.display = 'block'
     modalImg.src = this.src
   }
-  closeBtn.onclick = function () {
-    modal.style.display = 'none'
+  if (closeBtn) {
+    closeBtn.onclick = function () {
+      modal.style.display = 'none'
+    }
   }
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  const links = document.getElementsByClassName('extLink')
+  const links = Array.from(document.getElementsByClassName('extLink'))
   if (links.length > 0) {
     links.forEach(link => {
-      const isExternal = link.hostname !== window.location.hostname
-      if (isExternal) {
-        link.setAttribute('target', '_blank')
-        link.setAttribute('rel', 'noopener noreferrer')
+      try {
+        const isExternal = link.hostname !== window.location.hostname
+        if (isExternal) {
+          link.setAttribute('target', '_blank')
+          link.setAttribute('rel', 'noopener noreferrer')
+        }
+      } catch (e) {
+        // if link is malformed, skip it
       }
     })
   }
