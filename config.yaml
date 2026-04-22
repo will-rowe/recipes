@@ -29,19 +29,19 @@ menu:
       weight: 1
     - identifier: about
       name: About
-      url: /recipes/about/
+      url: /about/
       weight: 10
     - identifier: search
       name: Search
-      url: /recipes/search/
+      url: /search/
       weight: 100
     - identifier: tags
       name: Tags
-      url: /recipes/tags/
+      url: /tags/
       weight: 1000
     - identifier: archive
       name: Archive
-      url: /recipes/archive/
+      url: /archive/
       weight: 10000
 
 # site content
