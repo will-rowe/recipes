@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "A collection of recipes",
   "scripts": {
-    "build": "hugo --minify",
-    "clean": "rm -rf public",
+    "build": "hugo --minify -d dist",
+    "clean": "rm -rf dist",
     "deploy": "wrangler pages deploy"
   },
   "devDependencies": {
