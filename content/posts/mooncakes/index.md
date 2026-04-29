@@ -9,7 +9,7 @@ aliases: ["/mooncakes"]
 tags: ["baking", "chinese"]
 summary: "Cakes for the Chinese mid-autumn festival"
 cover:
-    image: "img/posts/mooncakes.jpg"
+    image: "mooncakes.jpg"
     alt: "mooncakes"
     caption: ""
     relative: false

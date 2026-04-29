@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vegetarian on Will Rowe</title>
+    <link>//localhost:1313/tags/vegetarian/</link>
+    <description>Recent content in Vegetarian on Will Rowe</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 01 Sep 2024 12:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/vegetarian/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arancini</title>
+      <link>//localhost:1313/posts/arancini/</link>
+      <pubDate>Sun, 01 Sep 2024 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/arancini/</guid>
+      <description>Fried risotto antipasti</description>
+    </item>
+    <item>
+      <title>Börek</title>
+      <link>//localhost:1313/posts/borek/</link>
+      <pubDate>Sun, 01 Sep 2024 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/borek/</guid>
+      <description>Filo pastry dish with a vegetarian filling</description>
+    </item>
+    <item>
+      <title>Okonomiyaki</title>
+      <link>//localhost:1313/posts/okonomiyaki/</link>
+      <pubDate>Sun, 01 Sep 2024 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/okonomiyaki/</guid>
+      <description>Savoury Japanese pancake</description>
+    </item>
+    <item>
+      <title>Salmon with Romesco sauce</title>
+      <link>//localhost:1313/posts/salmon-romesco/</link>
+      <pubDate>Sun, 01 Sep 2024 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/salmon-romesco/</guid>
+      <description>Rich sauce of roasted peppers and nuts, served with salmon and veg</description>
+    </item>
+    <item>
+      <title>Teriaki salmon and shitake rice</title>
+      <link>//localhost:1313/posts/teriyaki-salmon/</link>
+      <pubDate>Fri, 25 Dec 2020 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/teriyaki-salmon/</guid>
+      <description>Sweet glazed salmon with umami rice and chili-garlic mayo</description>
+    </item>
+    <item>
+      <title>Frijol</title>
+      <link>//localhost:1313/posts/frijol/</link>
+      <pubDate>Mon, 27 Jul 2020 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/frijol/</guid>
+      <description>Guatemalan black bean paste</description>
+    </item>
+  </channel>
+</rss>

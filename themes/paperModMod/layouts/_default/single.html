@@ -4,10 +4,25 @@
 
     <section class="recipe-header">
 
-        <img id="modalImgTrigger"
-            src="{{ .Params.cover.image | absURL }}"
+        {{- $img := .Params.cover.image -}}
+        {{- $resource := .Resources.GetMatch $img -}}
+        {{- if $resource -}}
+          {{- $sm := $resource.Resize "640x427 webp Q75" -}}
+          {{- $md := $resource.Resize "960x640 webp Q75" -}}
+          {{- $lg := $resource.Resize "1400x933 webp Q75" -}}
+          <img id="modalImgTrigger"
+            srcset="{{ $sm.RelPermalink }} 640w, {{ $md.RelPermalink }} 960w, {{ $lg.RelPermalink }} 1400w"
+            sizes="(max-width: 960px) 100vw, 960px"
+            src="{{ $md.RelPermalink }}"
             alt="{{ .Params.cover.alt }}"
             decoding="async">
+        {{- else -}}
+          {{- /* fallback for static files */ -}}
+          <img id="modalImgTrigger"
+            src="{{ $img | absURL }}"
+            alt="{{ .Params.cover.alt }}"
+            decoding="async">
+        {{- end -}}
         <div id="modalImg" class="modal">
             <span class="close">&times;</span>
             <img class="modal-content" id="modalImgContent">

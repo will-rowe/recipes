@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cakes on Will Rowe</title>
+    <link>//localhost:1313/tags/cakes/</link>
+    <description>Recent content in Cakes on Will Rowe</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 26 Dec 2020 12:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/cakes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Salted caramel torte</title>
+      <link>//localhost:1313/posts/baking/salted-caramel-torte/</link>
+      <pubDate>Sat, 26 Dec 2020 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/baking/salted-caramel-torte/</guid>
+      <description>Rich chocolate torte with a salted caramel sauce</description>
+    </item>
+    <item>
+      <title>Sticky toffee date cake</title>
+      <link>//localhost:1313/posts/baking/sticky-toffee-date-cake/</link>
+      <pubDate>Fri, 25 Dec 2020 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/baking/sticky-toffee-date-cake/</guid>
+      <description>Fancy take on a sticky toffee pudding</description>
+    </item>
+  </channel>
+</rss>
