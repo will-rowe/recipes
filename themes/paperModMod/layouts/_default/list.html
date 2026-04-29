@@ -28,9 +28,18 @@
   <div class="item-{{ add $index 1 }}">
     <a href="{{ .Permalink }}" class="card">
       <div class="thumb">
+        {{- $post := . -}}
         {{ with .Params.cover }}
         {{- $img := .image -}}
-        {{- $resource := .Resources.GetMatch $img -}}
+        {{- $imgPath := $img -}}
+        {{- if not (hasPrefix $imgPath "/") -}}
+          {{- if in $imgPath "/" -}}
+            {{- $imgPath = printf "/%s" $imgPath -}}
+          {{- else -}}
+            {{- $imgPath = printf "/img/posts/%s" $imgPath -}}
+          {{- end -}}
+        {{- end -}}
+        {{- $resource := $post.Resources.GetMatch $img -}}
         {{- if $resource -}}
           {{- $sm := $resource.Resize "360x240 webp Q75" -}}
           {{- $md := $resource.Resize "560x374 webp Q75" -}}
@@ -39,13 +48,13 @@
             srcset="{{ $sm.RelPermalink }} 360w, {{ $md.RelPermalink }} 560w, {{ $lg.RelPermalink }} 760w"
             sizes="(max-width: 768px) 100vw, 33vw"
             src="{{ $md.RelPermalink }}"
-            alt="Cover image for {{ $.Title }}"
+            alt="Cover image for {{ $post.Title }}"
             loading="lazy"
             decoding="async">
         {{- else -}}
-          {{- $srcSm := printf "/cdn-cgi/image/width=360,quality=70,fit=cover,format=auto/%s" $img -}}
-          {{- $srcMd := printf "/cdn-cgi/image/width=560,quality=72,fit=cover,format=auto/%s" $img -}}
-          {{- $srcLg := printf "/cdn-cgi/image/width=760,quality=75,fit=cover,format=auto/%s" $img -}}
+          {{- $srcSm := printf "/cdn-cgi/image/width=360,quality=70,fit=cover,format=auto%s" $imgPath -}}
+          {{- $srcMd := printf "/cdn-cgi/image/width=560,quality=72,fit=cover,format=auto%s" $imgPath -}}
+          {{- $srcLg := printf "/cdn-cgi/image/width=760,quality=75,fit=cover,format=auto%s" $imgPath -}}
           {{- $prod := (hugo.IsProduction | or (eq site.Params.env "production")) -}}
           {{- $isLocal := hugo.IsServer -}}
           {{- $useResize := and $prod (not $isLocal) -}}
@@ -55,9 +64,9 @@
             srcset="{{ $srcSm | absURL }} 360w, {{ $srcMd | absURL }} 560w, {{ $srcLg | absURL }} 760w"
             sizes="(max-width: 768px) 100vw, 33vw"
             {{- else -}}
-            src="{{ $img | absURL }}"
+            src="{{ $imgPath | absURL }}"
             {{- end -}}
-            alt="Cover image for {{ $.Title }}"
+            alt="Cover image for {{ $post.Title }}"
             loading="lazy"
             decoding="async">
         {{- end -}}
