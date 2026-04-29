@@ -17,9 +17,20 @@
             alt="{{ .Params.cover.alt }}"
             decoding="async">
         {{- else -}}
-          {{- /* fallback for static files */ -}}
+        {{- $heroSm := printf "/cdn-cgi/image/width=640,quality=72,fit=cover,format=auto/%s" $img -}}
+        {{- $heroMd := printf "/cdn-cgi/image/width=960,quality=75,fit=cover,format=auto/%s" $img -}}
+        {{- $heroLg := printf "/cdn-cgi/image/width=1400,quality=78,fit=cover,format=auto/%s" $img -}}
+        {{- $prod := (hugo.IsProduction | or (eq site.Params.env "production")) -}}
+        {{- $isLocal := hugo.IsServer -}}
+        {{- $useResize := and $prod (not $isLocal) -}}
           <img id="modalImgTrigger"
+            {{- if $useResize -}}
+            src="{{ $heroMd | absURL }}"
+            srcset="{{ $heroSm | absURL }} 640w, {{ $heroMd | absURL }} 960w, {{ $heroLg | absURL }} 1400w"
+            sizes="(max-width: 960px) 100vw, 960px"
+            {{- else -}}
             src="{{ $img | absURL }}"
+            {{- end -}}
             alt="{{ .Params.cover.alt }}"
             decoding="async">
         {{- end -}}
