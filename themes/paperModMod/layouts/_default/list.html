@@ -30,23 +30,37 @@
       <div class="thumb">
         {{ with .Params.cover }}
         {{- $img := .image -}}
-        {{- $srcSm := printf "/cdn-cgi/image/width=360,quality=70,fit=cover,format=auto/%s" $img -}}
-        {{- $srcMd := printf "/cdn-cgi/image/width=560,quality=72,fit=cover,format=auto/%s" $img -}}
-        {{- $srcLg := printf "/cdn-cgi/image/width=760,quality=75,fit=cover,format=auto/%s" $img -}}
-        {{- $prod := (hugo.IsProduction | or (eq site.Params.env "production")) -}}
-        {{- $isLocal := hugo.IsServer -}}
-        {{- $useResize := and $prod (not $isLocal) -}}
-        <img class="thumb-img"
-          {{- if $useResize -}}
-          src="{{ $srcMd | absURL }}"
-          srcset="{{ $srcSm | absURL }} 360w, {{ $srcMd | absURL }} 560w, {{ $srcLg | absURL }} 760w"
-          sizes="(max-width: 768px) 100vw, 33vw"
-          {{- else -}}
-          src="{{ $img | absURL }}"
-          {{- end -}}
-          alt="Cover image for {{ $.Title }}"
-          loading="lazy"
-          decoding="async">
+        {{- $resource := .Resources.GetMatch $img -}}
+        {{- if $resource -}}
+          {{- $sm := $resource.Resize "360x240 webp Q75" -}}
+          {{- $md := $resource.Resize "560x374 webp Q75" -}}
+          {{- $lg := $resource.Resize "760x507 webp Q75" -}}
+          <img class="thumb-img"
+            srcset="{{ $sm.RelPermalink }} 360w, {{ $md.RelPermalink }} 560w, {{ $lg.RelPermalink }} 760w"
+            sizes="(max-width: 768px) 100vw, 33vw"
+            src="{{ $md.RelPermalink }}"
+            alt="Cover image for {{ $.Title }}"
+            loading="lazy"
+            decoding="async">
+        {{- else -}}
+          {{- $srcSm := printf "/cdn-cgi/image/width=360,quality=70,fit=cover,format=auto/%s" $img -}}
+          {{- $srcMd := printf "/cdn-cgi/image/width=560,quality=72,fit=cover,format=auto/%s" $img -}}
+          {{- $srcLg := printf "/cdn-cgi/image/width=760,quality=75,fit=cover,format=auto/%s" $img -}}
+          {{- $prod := (hugo.IsProduction | or (eq site.Params.env "production")) -}}
+          {{- $isLocal := hugo.IsServer -}}
+          {{- $useResize := and $prod (not $isLocal) -}}
+          <img class="thumb-img"
+            {{- if $useResize -}}
+            src="{{ $srcMd | absURL }}"
+            srcset="{{ $srcSm | absURL }} 360w, {{ $srcMd | absURL }} 560w, {{ $srcLg | absURL }} 760w"
+            sizes="(max-width: 768px) 100vw, 33vw"
+            {{- else -}}
+            src="{{ $img | absURL }}"
+            {{- end -}}
+            alt="Cover image for {{ $.Title }}"
+            loading="lazy"
+            decoding="async">
+        {{- end -}}
         {{ end }}
       </div>
       <article>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Baking on Will Rowe</title>
+    <link>//localhost:1313/tags/baking/</link>
+    <description>Recent content in Baking on Will Rowe</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 27 Sep 2024 12:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/baking/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sourdough bread</title>
+      <link>//localhost:1313/posts/baking/basic-sourdough/</link>
+      <pubDate>Fri, 27 Sep 2024 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/baking/basic-sourdough/</guid>
+      <description>My basic sourdough bread recipe</description>
+    </item>
+    <item>
+      <title>Christmas sourdough bread</title>
+      <link>//localhost:1313/posts/baking/xmas-sourdough/</link>
+      <pubDate>Fri, 01 Dec 2023 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/baking/xmas-sourdough/</guid>
+      <description>Festive version of my sourdough bread recipe</description>
+    </item>
+    <item>
+      <title>Mooncakes</title>
+      <link>//localhost:1313/posts/mooncakes/</link>
+      <pubDate>Sun, 26 Nov 2023 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/mooncakes/</guid>
+      <description>Cakes for the Chinese mid-autumn festival</description>
+    </item>
+    <item>
+      <title>Salted caramel torte</title>
+      <link>//localhost:1313/posts/baking/salted-caramel-torte/</link>
+      <pubDate>Sat, 26 Dec 2020 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/baking/salted-caramel-torte/</guid>
+      <description>Rich chocolate torte with a salted caramel sauce</description>
+    </item>
+    <item>
+      <title>Sticky toffee date cake</title>
+      <link>//localhost:1313/posts/baking/sticky-toffee-date-cake/</link>
+      <pubDate>Fri, 25 Dec 2020 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/baking/sticky-toffee-date-cake/</guid>
+      <description>Fancy take on a sticky toffee pudding</description>
+    </item>
+    <item>
+      <title>Albie&#39;s lemon cheesecake</title>
+      <link>//localhost:1313/posts/baking/baked-cheesecake/</link>
+      <pubDate>Thu, 24 Dec 2020 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/baking/baked-cheesecake/</guid>
+      <description>New York style baked cheesecake with lemon curd</description>
+    </item>
+    <item>
+      <title>Butterfly waffles</title>
+      <link>//localhost:1313/posts/baking/waffles/</link>
+      <pubDate>Thu, 24 Dec 2020 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/baking/waffles/</guid>
+      <description>Quick and easy, American-style waffles in the shape of a butterfly</description>
+    </item>
+    <item>
+      <title>Doughnuts</title>
+      <link>//localhost:1313/posts/baking/donuts/</link>
+      <pubDate>Thu, 24 Dec 2020 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/baking/donuts/</guid>
+      <description>Cinnamon sugar ring doughnuts</description>
+    </item>
+    <item>
+      <title>Foccacia</title>
+      <link>//localhost:1313/posts/foccacia/</link>
+      <pubDate>Thu, 24 Dec 2020 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/foccacia/</guid>
+      <description>Sourdough foccacia, topped with sliced potato, olives, garlic and rosemary</description>
+    </item>
+    <item>
+      <title>French toast</title>
+      <link>//localhost:1313/posts/baking/french-toast/</link>
+      <pubDate>Thu, 24 Dec 2020 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/baking/french-toast/</guid>
+      <description>Leftover sourdough and egg custard</description>
+    </item>
+    <item>
+      <title>Pancakes</title>
+      <link>//localhost:1313/posts/baking/pancakes/</link>
+      <pubDate>Thu, 24 Dec 2020 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/baking/pancakes/</guid>
+      <description>American-style pancakes</description>
+    </item>
+    <item>
+      <title>Sourdough waffles</title>
+      <link>//localhost:1313/posts/baking/sourdough-waffles/</link>
+      <pubDate>Tue, 21 Jul 2020 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/baking/sourdough-waffles/</guid>
+      <description>Make ahead waffles</description>
+    </item>
+  </channel>
+</rss>

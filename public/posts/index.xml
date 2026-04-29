@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Will Rowe</title>
+    <link>//localhost:1313/posts/</link>
+    <description>Recent content in Posts on Will Rowe</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 27 Sep 2024 12:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sourdough bread</title>
+      <link>//localhost:1313/posts/baking/basic-sourdough/</link>
+      <pubDate>Fri, 27 Sep 2024 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/baking/basic-sourdough/</guid>
+      <description>My basic sourdough bread recipe</description>
+    </item>
+    <item>
+      <title>Basque cheesecake</title>
+      <link>//localhost:1313/posts/baking/basque-cheesecake/</link>
+      <pubDate>Tue, 17 Sep 2024 11:30:03 +0000</pubDate>
+      <guid>//localhost:1313/posts/baking/basque-cheesecake/</guid>
+      <description>Baked cheesecake with a blackberry sauce</description>
+    </item>
+    <item>
+      <title>Kimchi</title>
+      <link>//localhost:1313/posts/kimchi/</link>
+      <pubDate>Tue, 17 Sep 2024 11:30:03 +0000</pubDate>
+      <guid>//localhost:1313/posts/kimchi/</guid>
+      <description>Korean side dish of fermented cabbage</description>
+    </item>
+    <item>
+      <title>Korean pork bao</title>
+      <link>//localhost:1313/posts/korean-bao/</link>
+      <pubDate>Tue, 17 Sep 2024 11:30:03 +0000</pubDate>
+      <guid>//localhost:1313/posts/korean-bao/</guid>
+      <description>Korean-style pork belly bao</description>
+    </item>
+    <item>
+      <title>Pizza</title>
+      <link>//localhost:1313/posts/pizza/</link>
+      <pubDate>Tue, 17 Sep 2024 11:30:03 +0000</pubDate>
+      <guid>//localhost:1313/posts/pizza/</guid>
+      <description>24h Neapolitan pizza using poolish</description>
+    </item>
+    <item>
+      <title>Katsu curry</title>
+      <link>//localhost:1313/posts/katsu/</link>
+      <pubDate>Mon, 02 Sep 2024 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/katsu/</guid>
+      <description>Katsu chicken with a sweet curry sauce</description>
+    </item>
+    <item>
+      <title>Arancini</title>
+      <link>//localhost:1313/posts/arancini/</link>
+      <pubDate>Sun, 01 Sep 2024 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/arancini/</guid>
+      <description>Fried risotto antipasti</description>
+    </item>
+    <item>
+      <title>Börek</title>
+      <link>//localhost:1313/posts/borek/</link>
+      <pubDate>Sun, 01 Sep 2024 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/borek/</guid>
+      <description>Filo pastry dish with a vegetarian filling</description>
+    </item>
+    <item>
+      <title>Gyoza</title>
+      <link>//localhost:1313/posts/gyoza/</link>
+      <pubDate>Sun, 01 Sep 2024 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/gyoza/</guid>
+      <description>Japanese dumplings</description>
+    </item>
+    <item>
+      <title>Okonomiyaki</title>
+      <link>//localhost:1313/posts/okonomiyaki/</link>
+      <pubDate>Sun, 01 Sep 2024 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/okonomiyaki/</guid>
+      <description>Savoury Japanese pancake</description>
+    </item>
+    <item>
+      <title>Onigiri</title>
+      <link>//localhost:1313/posts/onigiri/</link>
+      <pubDate>Sun, 01 Sep 2024 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/onigiri/</guid>
+      <description>Seasoned rice snack with a savoury filling</description>
+    </item>
+    <item>
+      <title>Salmon with Romesco sauce</title>
+      <link>//localhost:1313/posts/salmon-romesco/</link>
+      <pubDate>Sun, 01 Sep 2024 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/salmon-romesco/</guid>
+      <description>Rich sauce of roasted peppers and nuts, served with salmon and veg</description>
+    </item>
+    <item>
+      <title>Short rib ragu</title>
+      <link>//localhost:1313/posts/short-rib-ragu/</link>
+      <pubDate>Sun, 01 Sep 2024 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/short-rib-ragu/</guid>
+      <description>Slow cooked beef short rib</description>
+    </item>
+    <item>
+      <title>Tacos al pastor</title>
+      <link>//localhost:1313/posts/tacos-al-pastor/</link>
+      <pubDate>Sun, 01 Sep 2024 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/tacos-al-pastor/</guid>
+      <description>Grilled pork with salsa and masa tortillas</description>
+    </item>
+    <item>
+      <title>Christmas sourdough bread</title>
+      <link>//localhost:1313/posts/baking/xmas-sourdough/</link>
+      <pubDate>Fri, 01 Dec 2023 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/baking/xmas-sourdough/</guid>
+      <description>Festive version of my sourdough bread recipe</description>
+    </item>
+    <item>
+      <title>Mooncakes</title>
+      <link>//localhost:1313/posts/mooncakes/</link>
+      <pubDate>Sun, 26 Nov 2023 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/mooncakes/</guid>
+      <description>Cakes for the Chinese mid-autumn festival</description>
+    </item>
+    <item>
+      <title>Smoked duck confit with sour cherry sauce</title>
+      <link>//localhost:1313/posts/smoked-duck-confit/</link>
+      <pubDate>Mon, 26 Dec 2022 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/smoked-duck-confit/</guid>
+      <description>Slow cooked smoked duck, served with sour cherry sauce, duck fat potatoes and lentils provençal</description>
+    </item>
+    <item>
+      <title>Tonkotsu Miso Ramen</title>
+      <link>//localhost:1313/posts/tonkotsu-miso-ramen/</link>
+      <pubDate>Mon, 26 Dec 2022 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/tonkotsu-miso-ramen/</guid>
+      <description>Tonkotsu miso ramen, sort of</description>
+    </item>
+    <item>
+      <title>Chorizo squash soup</title>
+      <link>//localhost:1313/posts/chorizo-squash-soup/</link>
+      <pubDate>Sat, 24 Dec 2022 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/chorizo-squash-soup/</guid>
+      <description>Sweet and spicy soup</description>
+    </item>
+    <item>
+      <title>Salted caramel torte</title>
+      <link>//localhost:1313/posts/baking/salted-caramel-torte/</link>
+      <pubDate>Sat, 26 Dec 2020 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/baking/salted-caramel-torte/</guid>
+      <description>Rich chocolate torte with a salted caramel sauce</description>
+    </item>
+    <item>
+      <title>Beef massaman</title>
+      <link>//localhost:1313/posts/beef-massaman/</link>
+      <pubDate>Fri, 25 Dec 2020 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/beef-massaman/</guid>
+      <description>Sweet and spicy, slow cooked beef in a coconut based sauce</description>
+    </item>
+    <item>
+      <title>Sticky toffee date cake</title>
+      <link>//localhost:1313/posts/baking/sticky-toffee-date-cake/</link>
+      <pubDate>Fri, 25 Dec 2020 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/baking/sticky-toffee-date-cake/</guid>
+      <description>Fancy take on a sticky toffee pudding</description>
+    </item>
+    <item>
+      <title>Teriaki salmon and shitake rice</title>
+      <link>//localhost:1313/posts/teriyaki-salmon/</link>
+      <pubDate>Fri, 25 Dec 2020 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/teriyaki-salmon/</guid>
+      <description>Sweet glazed salmon with umami rice and chili-garlic mayo</description>
+    </item>
+    <item>
+      <title>Albie&#39;s lemon cheesecake</title>
+      <link>//localhost:1313/posts/baking/baked-cheesecake/</link>
+      <pubDate>Thu, 24 Dec 2020 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/baking/baked-cheesecake/</guid>
+      <description>New York style baked cheesecake with lemon curd</description>
+    </item>
+    <item>
+      <title>Butterfly waffles</title>
+      <link>//localhost:1313/posts/baking/waffles/</link>
+      <pubDate>Thu, 24 Dec 2020 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/baking/waffles/</guid>
+      <description>Quick and easy, American-style waffles in the shape of a butterfly</description>
+    </item>
+    <item>
+      <title>Doughnuts</title>
+      <link>//localhost:1313/posts/baking/donuts/</link>
+      <pubDate>Thu, 24 Dec 2020 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/baking/donuts/</guid>
+      <description>Cinnamon sugar ring doughnuts</description>
+    </item>
+    <item>
+      <title>Foccacia</title>
+      <link>//localhost:1313/posts/foccacia/</link>
+      <pubDate>Thu, 24 Dec 2020 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/foccacia/</guid>
+      <description>Sourdough foccacia, topped with sliced potato, olives, garlic and rosemary</description>
+    </item>
+    <item>
+      <title>French toast</title>
+      <link>//localhost:1313/posts/baking/french-toast/</link>
+      <pubDate>Thu, 24 Dec 2020 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/baking/french-toast/</guid>
+      <description>Leftover sourdough and egg custard</description>
+    </item>
+    <item>
+      <title>Pancakes</title>
+      <link>//localhost:1313/posts/baking/pancakes/</link>
+      <pubDate>Thu, 24 Dec 2020 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/baking/pancakes/</guid>
+      <description>American-style pancakes</description>
+    </item>
+    <item>
+      <title>Birria tacos</title>
+      <link>//localhost:1313/posts/birria-tacos/</link>
+      <pubDate>Tue, 01 Sep 2020 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/birria-tacos/</guid>
+      <description>Mexican stew of slow cooked beef, served in tacos</description>
+    </item>
+    <item>
+      <title>Frijol</title>
+      <link>//localhost:1313/posts/frijol/</link>
+      <pubDate>Mon, 27 Jul 2020 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/frijol/</guid>
+      <description>Guatemalan black bean paste</description>
+    </item>
+    <item>
+      <title>Sourdough waffles</title>
+      <link>//localhost:1313/posts/baking/sourdough-waffles/</link>
+      <pubDate>Tue, 21 Jul 2020 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/baking/sourdough-waffles/</guid>
+      <description>Make ahead waffles</description>
+    </item>
+    <item>
+      <title>Fancy ploughman&#39;s lunch</title>
+      <link>//localhost:1313/posts/fancy-ploughmans/</link>
+      <pubDate>Thu, 26 Dec 2019 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/fancy-ploughmans/</guid>
+      <description>Pork pie, pickles, caramalised onion jam</description>
+    </item>
+  </channel>
+</rss>

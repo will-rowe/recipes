@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Breakfast on Will Rowe</title>
+    <link>//localhost:1313/tags/breakfast/</link>
+    <description>Recent content in Breakfast on Will Rowe</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 24 Dec 2020 12:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/breakfast/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Butterfly waffles</title>
+      <link>//localhost:1313/posts/baking/waffles/</link>
+      <pubDate>Thu, 24 Dec 2020 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/baking/waffles/</guid>
+      <description>Quick and easy, American-style waffles in the shape of a butterfly</description>
+    </item>
+    <item>
+      <title>French toast</title>
+      <link>//localhost:1313/posts/baking/french-toast/</link>
+      <pubDate>Thu, 24 Dec 2020 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/baking/french-toast/</guid>
+      <description>Leftover sourdough and egg custard</description>
+    </item>
+    <item>
+      <title>Pancakes</title>
+      <link>//localhost:1313/posts/baking/pancakes/</link>
+      <pubDate>Thu, 24 Dec 2020 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/baking/pancakes/</guid>
+      <description>American-style pancakes</description>
+    </item>
+    <item>
+      <title>Sourdough waffles</title>
+      <link>//localhost:1313/posts/baking/sourdough-waffles/</link>
+      <pubDate>Tue, 21 Jul 2020 12:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/baking/sourdough-waffles/</guid>
+      <description>Make ahead waffles</description>
+    </item>
+  </channel>
+</rss>
