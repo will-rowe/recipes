@@ -4,6 +4,7 @@
   "description": "A collection of recipes",
   "scripts": {
     "build": "hugo --minify -d dist",
+    "preview": "hugo server --source . -d dist --bind 0.0.0.0 --port 1313",
     "clean": "rm -rf dist",
     "deploy": "wrangler pages deploy"
   },
