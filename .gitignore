@@ -18,6 +18,8 @@ node_modules
 
 # Hugo cache / build
 .resources/
+resources/_gen/
+static/img/posts/_resized/
 
 # Temporary directories
 .cache/
@@ -26,3 +28,9 @@ node_modules
 # Misc
 dist/
 coverage/
+
+# Ignore image copies in content posts (resized images live in static/img/posts)
+content/posts/**/*.jpg
+content/posts/**/*.jpeg
+content/posts/**/*.png
+content/posts/**/*.webp
