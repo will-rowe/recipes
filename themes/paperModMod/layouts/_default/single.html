@@ -25,20 +25,20 @@
             alt="{{ .Params.cover.alt }}"
             decoding="async">
         {{- else -}}
-            {{- $heroSm := printf "/cdn-cgi/image/width=640,quality=72,fit=cover,format=auto%s" $imgPath -}}
-            {{- $heroMd := printf "/cdn-cgi/image/width=960,quality=75,fit=cover,format=auto%s" $imgPath -}}
-            {{- $heroLg := printf "/cdn-cgi/image/width=1400,quality=78,fit=cover,format=auto%s" $imgPath -}}
-        {{- $prod := (hugo.IsProduction | or (eq site.Params.env "production")) -}}
-        {{- $isLocal := hugo.IsServer -}}
-        {{- $useResize := and $prod (not $isLocal) -}}
+                    {{- $imgBase := path.Base $imgPath -}}
+                    {{- $imgStem := strings.TrimSuffix (path.Ext $imgBase) $imgBase -}}
+                    {{- $smLocal := printf "/img/posts/_resized/%s-w640.webp" $imgStem -}}
+                    {{- $mdLocal := printf "/img/posts/_resized/%s-w960.webp" $imgStem -}}
+                    {{- $lgLocal := printf "/img/posts/_resized/%s-w1400.webp" $imgStem -}}
+                    {{- $smFile := printf "static%s" $smLocal -}}
           <img id="modalImgTrigger"
-            {{- if $useResize -}}
-            src="{{ $heroMd | absURL }}"
-            srcset="{{ $heroSm | absURL }} 640w, {{ $heroMd | absURL }} 960w, {{ $heroLg | absURL }} 1400w"
-            sizes="(max-width: 960px) 100vw, 960px"
-            {{- else -}}
+                        {{- if fileExists $smFile -}}
+                        srcset="{{ $smLocal | absURL }} 640w, {{ $mdLocal | absURL }} 960w, {{ $lgLocal | absURL }} 1400w"
+                        sizes="(max-width: 960px) 100vw, 960px"
+                        src="{{ $mdLocal | absURL }}"
+                        {{- else -}}
             src="{{ $imgPath | absURL }}"
-            {{- end -}}
+                        {{- end -}}
             alt="{{ .Params.cover.alt }}"
             decoding="async">
         {{- end -}}

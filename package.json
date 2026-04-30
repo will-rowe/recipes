@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "description": "A collection of recipes",
   "scripts": {
-    "build": "hugo --minify -d dist",
+    "generate:images": "node scripts/generate-resized-images.mjs",
+    "build": "npm run generate:images && hugo --minify -d dist",
     "preview": "hugo server --source . -d dist --bind 0.0.0.0 --port 1313",
     "clean": "rm -rf dist",
     "deploy": "wrangler pages deploy"
   },
   "devDependencies": {
+    "sharp": "^0.34.4",
     "wrangler": "^4.84.1"
   },
   "engines": {

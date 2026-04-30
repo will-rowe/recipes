@@ -52,17 +52,17 @@
             loading="lazy"
             decoding="async">
         {{- else -}}
-          {{- $srcSm := printf "/cdn-cgi/image/width=360,quality=70,fit=cover,format=auto%s" $imgPath -}}
-          {{- $srcMd := printf "/cdn-cgi/image/width=560,quality=72,fit=cover,format=auto%s" $imgPath -}}
-          {{- $srcLg := printf "/cdn-cgi/image/width=760,quality=75,fit=cover,format=auto%s" $imgPath -}}
-          {{- $prod := (hugo.IsProduction | or (eq site.Params.env "production")) -}}
-          {{- $isLocal := hugo.IsServer -}}
-          {{- $useResize := and $prod (not $isLocal) -}}
+          {{- $imgBase := path.Base $imgPath -}}
+          {{- $imgStem := strings.TrimSuffix (path.Ext $imgBase) $imgBase -}}
+          {{- $smLocal := printf "/img/posts/_resized/%s-w360.webp" $imgStem -}}
+          {{- $mdLocal := printf "/img/posts/_resized/%s-w560.webp" $imgStem -}}
+          {{- $lgLocal := printf "/img/posts/_resized/%s-w760.webp" $imgStem -}}
+          {{- $smFile := printf "static%s" $smLocal -}}
           <img class="thumb-img"
-            {{- if $useResize -}}
-            src="{{ $srcMd | absURL }}"
-            srcset="{{ $srcSm | absURL }} 360w, {{ $srcMd | absURL }} 560w, {{ $srcLg | absURL }} 760w"
+            {{- if fileExists $smFile -}}
+            srcset="{{ $smLocal | absURL }} 360w, {{ $mdLocal | absURL }} 560w, {{ $lgLocal | absURL }} 760w"
             sizes="(max-width: 768px) 100vw, 33vw"
+            src="{{ $mdLocal | absURL }}"
             {{- else -}}
             src="{{ $imgPath | absURL }}"
             {{- end -}}
